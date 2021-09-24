@@ -34,6 +34,7 @@ contract Coin {
 
         console.log("Send Function ---- Sender's balance before is %s", balances[msg.sender] );
         console.log("Send Function ---- Receiver's balance before is %s", balances[receiver] );
+        
 
         if (amount > balances[msg.sender])
             revert InsufficientBalance({
